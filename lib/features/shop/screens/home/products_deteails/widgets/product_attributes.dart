@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/Images_body/rounded_container.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/Images_body/texts/product_title_text.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/texts/section_heading.dart';

@@ -1,14 +1,17 @@
+
+
+
 import 'package:flutter/material.dart';
 import '../../../features/authentication/screens/home_page/Achat_vente/Images_body/rounded_container.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
-import 'brand_card.dart';
+import 'brand_cardmeuble.dart';
 
-class BrandShowcase extends StatelessWidget {
+class BrandShowcaseV extends StatelessWidget {
   final List<String> images; // Déclarer la liste des images
 
-  const BrandShowcase({
+  const BrandShowcaseV({
     super.key, 
     required this.images, // Récupérer les images depuis le constructeur
   });
@@ -24,7 +27,7 @@ class BrandShowcase extends StatelessWidget {
       child: Column(
         children: [
           // Marque avec produits
-          const BrandCard(title: 'NIKE', subtitle: '25 PRODUCTS',),
+          const BrandCardM(title: 'Vetements', subtitle: '9 PRODUCTS',),
            const SizedBox(height: TSizes.spaceBtwItems),
           
           // Marques avec les 3 top produits

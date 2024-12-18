@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/appbar/appbar.dart';
 
 import '../../../../../../../../utils/constants/sizes.dart';
+import 'progress_indicateur_avis.dart';
 
 
 class ProductReviews extends StatelessWidget {
@@ -26,6 +27,8 @@ class ProductReviews extends StatelessWidget {
               SizedBox(height: TSizes.spaceBtwItems),
 
               // overall product rating
+              RatingProgresIndicator (text: '5', value: 1.0),
+             
               
              
             ],

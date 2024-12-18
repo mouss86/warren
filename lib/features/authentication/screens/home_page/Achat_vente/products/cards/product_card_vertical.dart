@@ -37,7 +37,8 @@ class ProductCardVertical extends StatelessWidget {
               backgroundColor: dark ? TColors.dark : TColors.light,
               child: Stack(
                 children: [
-                  RoundedImage(imageUrl: TImages.nikerouge, applyImageRadius: true, border: Border.all(),),
+                  RoundedImage(imageUrl: TImages.nikerouge,applyImageRadius: true, border: Border.all(),),
+                  
                   Positioned(
                     top: 12,
                     child: RoundedContainer(
@@ -76,7 +77,7 @@ class ProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProductTitleText(
-                    title: 'Veste ',
+                    title: 'Sneakers Nike ',
                     smallSize: true,
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections / 2),

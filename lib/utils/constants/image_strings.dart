@@ -25,10 +25,12 @@ class TImages {
   static const String sportIcon = "assets/icons/categoriesPopulaires/football-player.png";
   static const String shoesIcon = "assets/icons/categoriesPopulaires/sneaker.png";
   static const String cosmeticIcon = "assets/icons/categoriesPopulaires/cosmetics.png";
-  static const String animalIcon = "assets/icons/categoriesPopulaires/golden-retriever.png";
-  static const String toyIcon = "assets/icons/categoriesPopulaires/cubes.png";
+  static const String animalIcon = "assets/icons/categoriesPopulaires/dog.png";
+  static const String toyIcon = "assets/icons/categoriesPopulaires/toy-shop.png";
   static const String jeweleryIcon = "assets/icons/categoriesPopulaires/jewelery.png";
   static const String fourniture = "assets/icons/categoriesPopulaires/office.png";
+ 
+  
 
   // -- Banners images
   static const String manekImage = "assets/banners/buy-online-t-shirts-2643876_640.jpg"; // Correction du nom (manekImag -> manekImage)
@@ -104,10 +106,53 @@ class TImages {
   static const String gpsIcon = "assets/images/products/pin.png";
   static const String userIcon = "assets/images/products/user.png";
   
-  // -- Miscellaneous
+  // -- Jouets
+  
+  static const String bicyclette = "assets/images/jouets/bicycle.jpg";
+  static const String bracelet = "assets/images/jouets/bracelet.jpg";
+  static const String voiturette = "assets/images/jouets/voiturette.jpg";
+  static const String cubecolore =  "assets/images/jouets/cubecoloré.jpg";
+  static const String jouets2 = "assets/images/jouets/jouet2.jpg";
+  static const String jouets3 = "assets/images/jouets/jouet3.jpg";
+  static const String jouetsenbois = "assets/images/jouets/jouetsenbois.jpg";
+  static const String papanoel = "assets/images/jouets/papanoel.jpg";
+  static const String helicopter  = " assets/images/jouets/helicopter .jpg";
   
 
-  // vetements
+  // cosmetiques
+  static const String cosmetic = "assets/images/cosmetiques/cosmetic.jpg";
+  static const String maquillage = "assets/images/cosmetiques/maquillage.jpg";
+  static const String maquillage12 = "assets/images/cosmetiques/maquillage12.jpg";
+  static const String rougealevre = "assets/images/cosmetiques/maquillagelevre.jpg";
+  static const String pinceaumaquillage= "assets/images/cosmetiques/pinceaumaquillage.jpg";
+  static const String savondebeaute = "assets/images/cosmetiques/savondebauté.jpg";
+  static const String soinsbeaute = "assets/images/cosmetiques/soinsbeaute1.jpg";
+  static const String soinscorporel = "assets/images/cosmetiques/soinscorporel.jpg";
+  static const String soinsdevisage= "assets/images/cosmetiques/soinsdevisage.jpg";
+
+  // bijoux
+  static const String montrehomme1 = "assets/images/bijoux/montrehomme1.jpg";
+  static const String montrehomme2 = "assets/images/bijoux/montrehomme2.jpg";
+  static const String colierblanc = "assets/images/bijoux/colierblanc.jpg";
+  static const String colierblanc2 = "assets/images/bijoux/colierblanc2.jpg";
+  static const String colierblanc3 = "assets/images/bijoux/colierblanc3.jpg";
+  static const String chainedoree = "assets/images/bijoux/chainedorée.jpg";
+  static const String braceletdepierrep = "assets/images/bijoux/braceletdepierrep.jpg";
+  static const String bracelet1 = "assets/images/bijoux/bracelet1.jpg";
+  static const String bijouxdesoiree = "assets/images/bijoux/bijouxdesoirée.jpg";
+
+  // produits des animaux
+  static const String cagedechiot = "assets/images/animaux_produits/cagedechiot.jpg";
+  static const String nourriturechien1 = "assets/images/animaux_produits/nourriturechien1.jpg";
+  static const String nourriturechien2 = "assets/images/animaux_produits/nourriturechien2.jpg";
+  static const String ospourchien = "assets/images/animaux_produits/oschien1.jpg";
+  static const String panierchat = "assets/images/animaux_produits/panierchat.jpg";
+  static const String panierdog = "assets/images/animaux_produits/panierdog.jpg";
+
+
+
+
+
 
  
   

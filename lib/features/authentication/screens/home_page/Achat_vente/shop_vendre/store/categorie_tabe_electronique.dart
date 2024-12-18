@@ -1,14 +1,15 @@
+
 import 'package:flutter/material.dart';
+import 'package:warren/common/widgets/brands/brand_showcaseelectronique.dart';
 import 'package:warren/common/widgets/success_screen/layouts/grid_layout.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/products/cards/product_card_vertical.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/texts/section_heading.dart';
 
-import '../../../../../../../common/widgets/brands/brand_showcase.dart';
 import '../../../../../../../utils/constants/image_strings.dart';
 import '../../../../../../../utils/constants/sizes.dart';
 
-class CategoryTab extends StatelessWidget {
-  const CategoryTab({super.key});
+class CategoryTabE extends StatelessWidget {
+  const CategoryTabE({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,22 +22,22 @@ class CategoryTab extends StatelessWidget {
           child: Column(
             children: [
               // Marques
-              const BrandShowcase(
+              const BrandShowcaseV(
                 images: [
-                  TImages.nikenoir,
-                  TImages.nikerouge,
-                  TImages.nikevertblanc,
-                  TImages.nikenoir,
+                  TImages.airpods,
+                  TImages.applewatch,
+                  TImages.applewatch,
+                  TImages.appareilphotosony,
                  
-                  TImages.adidasbleublanc
+                  TImages.projecteur1
                 ],
               ),
-              const BrandShowcase( // j'ai ajouter un deuxieme
+              const BrandShowcaseV( // j'ai ajouter un deuxieme
                 images: [
-                  TImages.adidasblancvert,
-                  TImages.adidasbleublanc,
-                  TImages.adidasruning,
-                  TImages.adidasblancnoir,
+                  TImages.macbookrose,
+                  TImages.musiplayer1,
+                  TImages.musiplayer2,
+                  TImages.sonyxperia,
                  
                 ],
               ),

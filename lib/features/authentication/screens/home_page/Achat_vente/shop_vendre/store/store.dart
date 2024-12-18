@@ -4,15 +4,24 @@ import 'package:warren/features/authentication/screens/home_page/Achat_vente/app
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/shop_vendre/store/category_tab.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/texts/section_heading.dart';
 import 'package:warren/utils/helpers/helper_functions.dart';
-
 import '../../../../../../../utils/constants/colors.dart';
 import '../../../../../../../utils/constants/enum Tex.dart';
 import '../../../../../../../utils/constants/image_strings.dart';
 import '../../../../../../../utils/constants/sizes.dart';
 import '../../Images_body/circular_image.dart';
 import '../../Images_body/texts/brand_title_text_avec_verified_verified_icon.dart';
+import '../../popular_categories_img_text-widget/clothes_categorie_img.dart';
+import '../../popular_categories_img_text-widget/cosmetic_categorie_img.dart';
+import '../../popular_categories_img_text-widget/fourniture_categorie_img.dart';
+import '../../popular_categories_img_text-widget/shoes_categorie_img.dart';
 import '../../products.cart/cart_menu_icon.dart';
 import '../../search_container.dart';
+import 'categorie_tabe_electronique.dart';
+import 'categorie_table_vetements.dart';
+import 'categorie_tabmeuble.dart';
+
+// Écrans de catégorie (exemple)
+// Remplacez par l'import réel
 
 // Screen Achat
 class StoreScreen extends StatelessWidget {
@@ -26,6 +35,14 @@ class StoreScreen extends StatelessWidget {
       TImages.shoesIcon,
       TImages.cosmeticIcon,
       TImages.fourniture,
+    ];
+
+    // Liste des destinations d'écran pour chaque image
+    final List<Widget> categoryScreens = [
+      ClothesCategorieImg(),  // Destination pour Vetements
+      ShoesCategorieImg(),    // Destination pour Chaussures
+      CosmeticCategorieImg(),
+      FournitureCategorieImg(), // Destination pour Fournitures
     ];
 
     return DefaultTabController(
@@ -83,7 +100,15 @@ class StoreScreen extends StatelessWidget {
                           itemCount: 4,  // Il y a 4 éléments (donc 4 images différentes)
                           itemBuilder: (_, index) {
                             return GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                // Naviguer vers l'écran correspondant à l'image
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) => categoryScreens[index],  // Utiliser l'écran en fonction de l'index
+                                  ),
+                                );
+                              },
                               child: RoundedContainer(
                                 padding: EdgeInsets.all(TSizes.sm),
                                 showBorder: true,
@@ -92,7 +117,7 @@ class StoreScreen extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.start, // Aligner à gauche
                                   children: [
                                     // Icon Marques avec l'image différente pour chaque index
-                                    Flexible(
+                                    Expanded(
                                       child: CircularImage(
                                         isNetworkImage: false,
                                         image: images[index],  // Utiliser l'image de la liste en fonction de l'index
@@ -116,7 +141,7 @@ class StoreScreen extends StatelessWidget {
                                           ),
                                           Expanded(
                                             child: Text(
-                                              '155 Products',
+                                              '9 Products',
                                               overflow: TextOverflow.ellipsis,
                                               style: Theme.of(context).textTheme.labelMedium,
                                             ),
@@ -141,7 +166,7 @@ class StoreScreen extends StatelessWidget {
                   labelColor: THelperFunctions.isDarkMode(context) ? TColors.white : TColors.primary,
                   tabs: [
                     Tab(child: Text('Sport')),
-                    Tab(child: Text('Meuble')),//Pour faire combiner un container specifique a chaque Tab, il fauter d'autres CategoryTab(),Specifiques
+                    Tab(child: Text('Meuble')), //Pour faire combiner un container specifique a chaque Tab, il fauter d'autres CategoryTab(),Specifiques
                     Tab(child: Text('Electronique')),
                     Tab(child: Text('Vetement')),
                     Tab(child: Text('Cosmetique')),
@@ -150,19 +175,20 @@ class StoreScreen extends StatelessWidget {
               ),
             ];
           },
-          body: Flexible(
-            child: TabBarView(
+          body: 
+             TabBarView(
               children: [
                 CategoryTab(),
-                CategoryTab(),
-                CategoryTab(),
-                CategoryTab(),
+                CategoryTabM(),
+                CategoryTabE(),
+                CategoryTabV(),
                 CategoryTab()
               ],
             ),
-          ), 
+          
         ),
       ),
     );
   }
 }
+
