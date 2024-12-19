@@ -20,12 +20,17 @@ import 'categorie_tabe_electronique.dart';
 import 'categorie_table_vetements.dart';
 import 'categorie_tabmeuble.dart';
 
-// Écrans de catégorie (exemple)
-// Remplacez par l'import réel
+class StoreScreen extends StatefulWidget {
+  // Retirer le mot-clé const ici
+  const StoreScreen({Key? key}) : super(key: key); // Utiliser super(key: key) pour transmettre à la classe parente
 
-// Screen Achat
-class StoreScreen extends StatelessWidget {
-  const StoreScreen({super.key});
+  @override
+  _StoreScreenState createState() => _StoreScreenState();
+}
+
+class _StoreScreenState extends State<StoreScreen> {
+  // Déclarez le TextEditingController dans l'état
+  TextEditingController textEditingController = TextEditingController(text: '');
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +60,7 @@ class StoreScreen extends StatelessWidget {
           ),
           actions: [
             CarCounterIcon(onPressed: () {}, iconColor: Colors.black), // temporaire
-          ], 
+          ],
         ),
         body: NestedScrollView( // Utilisation de NestedScrollView pour gérer l'espace scrollable
           headerSliverBuilder: (_, innerBoxIsScrolled) {
@@ -80,6 +85,7 @@ class StoreScreen extends StatelessWidget {
                           showBorder: true, // Bordure visible
                           showBackground: true, // Fond visible
                           padding: EdgeInsets.symmetric(vertical: TSizes.sm), // Padding ajusté
+                          controller: textEditingController,  // Utilisation du contrôleur dans l'état
                         ),
                         SizedBox(height: TSizes.spaceBtwItems),
     
@@ -175,17 +181,15 @@ class StoreScreen extends StatelessWidget {
               ),
             ];
           },
-          body: 
-             TabBarView(
-              children: [
-                CategoryTab(),
-                CategoryTabM(),
-                CategoryTabE(),
-                CategoryTabV(),
-                CategoryTab()
-              ],
-            ),
-          
+          body: TabBarView(
+            children: [
+              CategoryTab(),
+              CategoryTabM(),
+              CategoryTabE(),
+              CategoryTabV(),
+              CategoryTab(),
+            ],
+          ),
         ),
       ),
     );

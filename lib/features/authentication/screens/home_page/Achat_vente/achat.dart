@@ -9,8 +9,17 @@ import 'products/cards/product_card_vertical.dart';
 import 'search_container.dart';
 import 'texts/section_heading.dart';
 
-class AchatScreen extends StatelessWidget {
-  const AchatScreen({super.key});
+class AchatScreen extends StatefulWidget {
+  // Retirer le mot-clé const ici
+  const AchatScreen({Key? key}) : super(key: key); // Utiliser super(key: key) pour transmettre à la classe parente
+
+  @override
+  _AchatScreenState createState() => _AchatScreenState();
+}
+
+class _AchatScreenState extends State<AchatScreen> {
+  // Déclarez le TextEditingController dans l'état
+  TextEditingController textEditingController = TextEditingController(text: '');
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +36,13 @@ class AchatScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Searchbar
-                  SearchContainer(text: 'Search in Store', padding: EdgeInsets.zero,),
+                  SearchContainer(
+                          text: 'Rechercher les produits',
+                          showBorder: true, // Bordure visible
+                          showBackground: true, // Fond visible
+                          padding: EdgeInsets.symmetric(vertical: TSizes.sm), // Padding ajusté
+                          controller: textEditingController,  // Utilisation du contrôleur dans l'état
+                        ),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Heading

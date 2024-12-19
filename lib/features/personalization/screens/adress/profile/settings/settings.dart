@@ -4,6 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/texts/section_heading.dart';
 import 'package:warren/features/personalization/screens/adress/profile/settings/list_titles/settings_menu_tile.dart';
+import 'package:warren/features/personalization/screens/adress/profile/settings/widgets/address.dart';
 
 import '../../../../../../common/widgets/success_screen/custom_shapes/containers/primary_header_container.dart';
 import '../../../../../../utils/constants/colors.dart';
@@ -47,13 +48,13 @@ class SettingsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   // Account Setting
-                  SectionHeading(title: 'Account Settings', showActionButton: false,),
+                  SectionHeading(title: 'Parametres du compte', showActionButton: false,),
                   SizedBox(height: TSizes.spaceBtwItems),
                   SettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'Mon Adresse', 
                     subTitle: 'Entrer votre adresse de livraison',
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.shopping_cart,

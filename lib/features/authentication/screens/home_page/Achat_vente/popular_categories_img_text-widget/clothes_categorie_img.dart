@@ -51,7 +51,7 @@ class ClothesCategorieImg extends StatelessWidget {
               childAspectRatio: 0.75, // Ajuste la taille des images pour qu'elles ne soient pas carrées
             ),
             itemCount: images.length,
-            itemBuilder: (_, index) {
+            itemBuilder: (_, index) { //  itemBuilder build all the images
               return GestureDetector(
                 onTap: () {
                   // Action lors du clic sur l'image
