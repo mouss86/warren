@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:warren/common/styles/spacing_styles.dart';
-import 'package:warren/features/authentication/screens/home_page/home_page_principale/home_page1.dart';
+
 import 'package:warren/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:warren/features/authentication/screens/signup/widgets/signup.dart';
 import 'package:warren/utils/constants/image_strings.dart';
@@ -12,6 +12,7 @@ import 'package:warren/utils/helpers/helper_functions.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constants/colors.dart';
+import '../home_page/Achat_vente/navigation_menu.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -99,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                       SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                              onPressed: ()  => Get.offAll(() => const HomePage1()), // TEMPORAIRE TEMPORAIRE  TEMPORAIRE TEMPORAIRE TEMPORAIRE
+                              onPressed: ()  => Get.offAll(() => const NavigationMenu()), // TEMPORAIRE TEMPORAIRE  TEMPORAIRE TEMPORAIRE TEMPORAIRE // Get.to(() => const NavigationMenu());
                               child: const Text(TTexts.signIn))),
                               const SizedBox(height: TSizes.spaceBtwSections),
                   

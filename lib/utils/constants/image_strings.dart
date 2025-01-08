@@ -116,7 +116,7 @@ class TImages {
   static const String jouets3 = "assets/images/jouets/jouet3.jpg";
   static const String jouetsenbois = "assets/images/jouets/jouetsenbois.jpg";
   static const String papanoel = "assets/images/jouets/papanoel.jpg";
-  static const String helicopter  = " assets/images/jouets/helicopter .jpg";
+  static const String helicopter  = "assets/images/jouets/helicopter .jpg";
   
 
   // cosmetiques

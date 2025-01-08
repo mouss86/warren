@@ -22,7 +22,7 @@ class CategoryTabE extends StatelessWidget {
           child: Column(
             children: [
               // Marques
-              const BrandShowcaseV(
+              const BrandShowcaseE(
                 images: [
                   TImages.airpods,
                   TImages.applewatch,
@@ -32,7 +32,7 @@ class CategoryTabE extends StatelessWidget {
                   TImages.projecteur1
                 ],
               ),
-              const BrandShowcaseV( // j'ai ajouter un deuxieme
+              const BrandShowcaseE( // j'ai ajouter un deuxieme
                 images: [
                   TImages.macbookrose,
                   TImages.musiplayer1,

@@ -74,7 +74,7 @@ class _AchatScreenState extends State<AchatScreen> {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // heading
-                  SectionHeading(title: 'Categories Populaires', onPressed: (){},),
+                  SectionHeading(title: 'Produits Populaires', onPressed: (){},),
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Categories populaires

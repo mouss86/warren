@@ -3,12 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:warren/utils/constants/image_strings.dart'; // Importer le fichier de constantes si nécessaire
 
-class BrandCardM extends StatelessWidget {
+class BrandCardE extends StatelessWidget {
   final String title; // Titre de la marque
   final String subtitle; // Sous-titre de la marque
 
   // Constructeur
-  const BrandCardM({
+  const BrandCardE({
     super.key,
     required this.title,
     required this.subtitle,
@@ -29,7 +29,7 @@ class BrandCardM extends StatelessWidget {
             // Image NikeLogo (CircleAvatar)
             CircleAvatar(
               radius: 30, // Taille de l'icône
-              backgroundImage: AssetImage(TImages.tablesalon), // Utilisation de la constante nikeLogo
+              backgroundImage: AssetImage(TImages.ecranapple), // Utilisation de la constante nikeLogo
             ),
             SizedBox(width: 15), // Espacement entre l'image et le texte
             // Column avec le titre et le sous-titre

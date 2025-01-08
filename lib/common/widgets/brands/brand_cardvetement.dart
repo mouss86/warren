@@ -29,7 +29,7 @@ class BrandCardV extends StatelessWidget {
             // Image NikeLogo (CircleAvatar)
             CircleAvatar(
               radius: 30, // Taille de l'icône
-              backgroundImage: AssetImage(TImages.tshirtbalanciagaB), // Utilisation de la constante nikeLogo
+              backgroundImage: AssetImage(TImages.jeansjogging), // Utilisation de la constante nikeLogo
             ),
             SizedBox(width: 15), // Espacement entre l'image et le texte
             // Column avec le titre et le sous-titre

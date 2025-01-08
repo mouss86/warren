@@ -1,11 +1,11 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:warren/common/widgets/brands/brand_showcaseelectronique.dart';
 import 'package:warren/common/widgets/success_screen/layouts/grid_layout.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/products/cards/product_card_vertical.dart';
 import 'package:warren/features/authentication/screens/home_page/Achat_vente/texts/section_heading.dart';
 
+import '../../../../../../../common/widgets/brands/brand_showcasevetement.dart';
 import '../../../../../../../utils/constants/image_strings.dart';
 import '../../../../../../../utils/constants/sizes.dart';
 

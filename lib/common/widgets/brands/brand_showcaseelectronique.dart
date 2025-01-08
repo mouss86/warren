@@ -1,16 +1,16 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:warren/common/widgets/brands/brand_cardvetement.dart';
+import 'package:warren/common/widgets/brands/brand_cardelectronique.dart';
 import '../../../features/authentication/screens/home_page/Achat_vente/Images_body/rounded_container.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
-class BrandShowcaseV extends StatelessWidget {
+class BrandShowcaseE extends StatelessWidget {
   final List<String> images; // Déclarer la liste des images
 
-  const BrandShowcaseV({
+  const BrandShowcaseE({
     super.key, 
     required this.images, // Récupérer les images depuis le constructeur
   });
@@ -26,7 +26,7 @@ class BrandShowcaseV extends StatelessWidget {
       child: Column(
         children: [
           // Marque avec produits
-          const BrandCardV(title: 'Vetement', subtitle: '9 PRODUCTS',),
+          const BrandCardE(title: 'Electronique', subtitle: '9 PRODUCTS',),
            const SizedBox(height: TSizes.spaceBtwItems),
           
           // Marques avec les 3 top produits

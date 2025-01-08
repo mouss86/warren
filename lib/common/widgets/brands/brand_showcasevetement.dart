@@ -7,6 +7,7 @@ import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 import 'brand_cardmeuble.dart';
+import 'brand_cardvetement.dart';
 
 class BrandShowcaseV extends StatelessWidget {
   final List<String> images; // Déclarer la liste des images
@@ -27,7 +28,7 @@ class BrandShowcaseV extends StatelessWidget {
       child: Column(
         children: [
           // Marque avec produits
-          const BrandCardM(title: 'Vetements', subtitle: '9 PRODUCTS',),
+          const BrandCardV(title: 'Vetements', subtitle: '9 PRODUCTS',),
            const SizedBox(height: TSizes.spaceBtwItems),
           
           // Marques avec les 3 top produits

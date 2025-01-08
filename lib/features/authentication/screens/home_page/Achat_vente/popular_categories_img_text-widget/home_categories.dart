@@ -52,7 +52,7 @@ class HomeCategories extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (_) => ClothesCategorieImg()), // Redirection vers la page "ClothesCategorieImg"
                 );
-              } else if (title == 'Vetements') {
+              } else if (title == 'Meubles') {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => FournitureCategorieImg()), // Redirection vers la page "ClothesCategorieImg"
