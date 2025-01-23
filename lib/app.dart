@@ -4,6 +4,7 @@ import 'package:warren/features/authentication/screens/login/login.dart';
 import 'package:warren/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:warren/utils/theme/theme.dart';
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
       theme: TMyAppTheme.lightTheme,
-      darkTheme: TMyAppTheme.darkTheme,
+      darkTheme: TMyAppTheme.darkTheme, 
+     
 
       // page d'accueil
       home: OnboardingScreen(),
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
         // Route pour l'écran de Login
         GetPage(name: '/login', page: () => LoginScreen()), // Définir la route '/login' pour LoginScreen
       ],
+     
 
       
     );

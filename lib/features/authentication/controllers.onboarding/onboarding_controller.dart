@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get_storage/get_storage.dart';
+
+import '../screens/login/login.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -24,8 +27,10 @@ class OnboardingController extends GetxController {
 
   // Passe à la page suivante
   void nextPage() {
-    if (currentPageIndex.value == 2) { // Si c'est la dernière page (index 2)
-       Get.toNamed('/login'); // Redirige vers la page de connexion
+    if (currentPageIndex.value == 2) {  
+      final storage = GetStorage();
+      storage.write("IsFirstTime", false); // Si c'est la dernière page (index 2)
+      Get.offAll(() => const LoginScreen()); // Redirige vers la page de connexion en supprimant toutes les autres pages
     } else {
       // Si on n'est pas à la dernière page, on passe à la page suivante
       int page = currentPageIndex.value + 1;

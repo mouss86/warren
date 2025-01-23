@@ -148,6 +148,7 @@ class TImages {
   static const String ospourchien = "assets/images/animaux_produits/oschien1.jpg";
   static const String panierchat = "assets/images/animaux_produits/panierchat.jpg";
   static const String panierdog = "assets/images/animaux_produits/panierdog.jpg";
+  static const String animationI = "assets/animation/animation.json";
 
 
 

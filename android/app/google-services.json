@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727798431223",
+    "project_id": "warren-98d49",
+    "storage_bucket": "warren-98d49.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727798431223:android:660e9216773b5a09d582f2",
+        "android_client_info": {
+          "package_name": "com.example.warren"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq0cVh71gnrNzUf7EL4n_2BWd3pQVd6Uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
